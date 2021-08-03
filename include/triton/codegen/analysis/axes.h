@@ -40,7 +40,7 @@ public:
 
 private:
   tools::graph<node_t> graph_;
-  std::map<node_t, size_t> axes_;
+  std::map<node_t, std::size_t> axes_;
 };
 
 }

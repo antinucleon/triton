@@ -15,8 +15,8 @@ class graph {
   typedef std::map<node_t, std::set<node_t>> edges_t;
 
 public:
-  typedef std::map<size_t, std::vector<node_t>> cmap_t;
-  typedef std::map<node_t, size_t> nmap_t;
+  typedef std::map<std::size_t, std::vector<node_t>> cmap_t;
+  typedef std::map<node_t, std::size_t> nmap_t;
 
 private:
   void connected_components_impl(node_t x, std::set<node_t> &nodes,
